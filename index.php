@@ -13,7 +13,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft", "Roboto", sans-serif}
 
 <!-- Side Navigation -->
 <nav class="w3-sidebar w3-bar-block w3-collapse w3-white w3-animate-left w3-card" style="z-index:3;width:320px;" id="mySidebar">
-  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-border-bottom w3-large"><img src="https://www.w3schools.com/images/w3schools.png" style="width:60%;"></a>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-border-bottom w3-large"><img src="<?php echo get_template_directory_uri(); ?>/https://www.w3schools.com/images/w3schools.png" style="width:60%;"></a>
   <a href="javascript:void(0)" onclick="w3_close()" title="Close Sidemenu" 
   class="w3-bar-item w3-button w3-hide-large w3-large">Close <i class="fa fa-remove"></i></a>
   <a href="javascript:void(0)" class="w3-bar-item w3-button w3-dark-grey w3-button w3-hover-black w3-left-align" onclick="document.getElementById('id01').style.display='block'">New Message <i class="w3-padding fa fa-pencil"></i></a>
@@ -21,20 +21,20 @@ html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft", "Roboto", sans-serif}
   <div id="Demo1" class="w3-hide w3-animate-left">
     <a href="javascript:void(0)" class="w3-bar-item w3-button w3-border-bottom test w3-hover-light-grey" onclick="openMail('Borge');w3_close();" id="firstTab">
       <div class="w3-container">
-        <img class="w3-round w3-margin-right" src="images/avatar3.png" style="width:15%;"><span class="w3-opacity w3-large">Borge Refsnes</span>
+        <img class="w3-round w3-margin-right" src="<?php echo get_template_directory_uri(); ?>/images/avatar3.png" style="width:15%;"><span class="w3-opacity w3-large">Borge Refsnes</span>
         <h6>Subject: Remember Me</h6>
         <p>Hello, i just wanted to let you know that i'll be home at...</p>
       </div>
     </a>
      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-border-bottom test w3-hover-light-grey" onclick="openMail('Jane');w3_close();">
       <div class="w3-container">
-        <img class="w3-round w3-margin-right" src="images/avatar5.png" style="width:15%;"><span class="w3-opacity w3-large">Jane Doe</span>
+        <img class="w3-round w3-margin-right" src="<?php echo get_template_directory_uri(); ?>/images/avatar5.png" style="width:15%;"><span class="w3-opacity w3-large">Jane Doe</span>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
       </div>
     </a>
     <a href="javascript:void(0)" class="w3-bar-item w3-button w3-border-bottom test w3-hover-light-grey" onclick="openMail('John');w3_close();">
       <div class="w3-container">
-        <img class="w3-round w3-margin-right" src="images/avatar2.png" style="width:15%;"><span class="w3-opacity w3-large">John Doe</span>
+        <img class="w3-round w3-margin-right" src="<?php echo get_template_directory_uri(); ?>/images/avatar2.png" style="width:15%;"><span class="w3-opacity w3-large">John Doe</span>
         <p>Welcome!</p>
       </div>
     </a>
@@ -78,7 +78,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft", "Roboto", sans-serif}
 
 <div id="Borge" class="w3-container person">
   <br>
-  <img class="w3-round  w3-animate-top" src="images/avatar3.png" style="width:20%;">
+  <img class="w3-round  w3-animate-top" src="<?php echo get_template_directory_uri(); ?>/images/avatar3.png" style="width:20%;">
   <h5 class="w3-opacity">Subject: Remember Me</h5>
   <h4><i class="fa fa-clock-o"></i> From Borge Refsnes, Sep 27, 2015.</h4>
   <a class="w3-button w3-light-grey" href="#">Reply<i class="w3-margin-left fa fa-mail-reply"></i></a>
@@ -91,7 +91,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft", "Roboto", sans-serif}
 
 <div id="Jane" class="w3-container person">
   <br>
-  <img class="w3-round w3-animate-top" src="images/avatar5.png" style="width:20%;">
+  <img class="w3-round w3-animate-top" src="<?php echo get_template_directory_uri(); ?>/images/avatar5.png" style="width:20%;">
   <h5 class="w3-opacity">Subject: None</h5>
   <h4><i class="fa fa-clock-o"></i> From Jane Doe, Sep 25, 2015.</h4>
   <a class="w3-button w3-light-grey">Reply<i class="w3-margin-left fa fa-mail-reply"></i></a>
@@ -103,7 +103,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft", "Roboto", sans-serif}
 
 <div id="John" class="w3-container person">
   <br>
-  <img class="w3-round w3-animate-top" src="images/avatar2.png" style="width:20%;">
+  <img class="w3-round w3-animate-top" src="<?php echo get_template_directory_uri(); ?>/images/avatar2.png" style="width:20%;">
   <h5 class="w3-opacity">Subject: None</h5>
   <h4><i class="fa fa-clock-o"></i> From John Doe, Sep 23, 2015.</h4>
   <a class="w3-button w3-light-grey">Reply<i class="w3-margin-left fa fa-mail-reply"></i></a>
